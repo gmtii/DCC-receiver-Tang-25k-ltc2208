@@ -1,0 +1,50 @@
+Changes in this fork:
+
+Change frequency via serial command - just connect to the standart gowin uart and type frequency in the terminal (no checks!).
+Press second button (not reset :)) to show current frequency in the uart terminal.
+Test fpga Gowin on module tang-nano-9k as ddc-frontend for sdr eceiver
+
+Control RX frequency and LTC2208 parameters with python gui.
+
+Structure:
+
+16 bit samples from LTC2208 (clock 61.440 MHz)
+cordic => IQ
+2 stage CIC-decimator
+polyphaze FIR-decimator X8R8
+output quadrature samples on MCU over I2S-master interface (48000 Hz sample rate)
+
+LTC2208 PINOUT:
+
+IO_LOC "adc_data[15]" L9;
+IO_PORT "adc_data[15]" IO_TYPE=LVCMOS33 PULL_MODE=NONE BANK_VCCIO=3.3;
+IO_LOC "adc_data[14]" K9;
+IO_PORT "adc_data[14]" IO_TYPE=LVCMOS33 PULL_MODE=NONE BANK_VCCIO=3.3;
+IO_LOC "adc_data[13]" L10;
+IO_PORT "adc_data[13]" IO_TYPE=LVCMOS33 PULL_MODE=NONE BANK_VCCIO=3.3;
+IO_LOC "adc_data[12]" K10;
+IO_PORT "adc_data[12]" IO_TYPE=LVCMOS33 PULL_MODE=NONE BANK_VCCIO=3.3;
+IO_LOC "adc_data[11]" L7;
+IO_PORT "adc_data[11]" IO_TYPE=LVCMOS33 PULL_MODE=NONE BANK_VCCIO=3.3;
+IO_LOC "adc_data[10]" L8;
+IO_PORT "adc_data[10]" IO_TYPE=LVCMOS33 PULL_MODE=NONE BANK_VCCIO=3.3;
+IO_LOC "adc_data[9]" K7;
+IO_PORT "adc_data[9]" IO_TYPE=LVCMOS33 PULL_MODE=NONE BANK_VCCIO=3.3;
+IO_LOC "adc_data[8]" J7;
+IO_PORT "adc_data[8]" IO_TYPE=LVCMOS33 PULL_MODE=NONE BANK_VCCIO=3.3;
+IO_LOC "adc_data[7]" H1;
+IO_PORT "adc_data[7]" IO_TYPE=LVCMOS33 PULL_MODE=NONE BANK_VCCIO=3.3;
+IO_LOC "adc_data[6]" H2;
+IO_PORT "adc_data[6]" IO_TYPE=LVCMOS33 PULL_MODE=NONE BANK_VCCIO=3.3;
+IO_LOC "adc_data[5]" G4;
+IO_PORT "adc_data[5]" IO_TYPE=LVCMOS33 PULL_MODE=NONE BANK_VCCIO=3.3;
+IO_LOC "adc_data[4]" H4;
+IO_PORT "adc_data[4]" IO_TYPE=LVCMOS33 PULL_MODE=NONE BANK_VCCIO=3.3;
+IO_LOC "adc_data[3]" J1;
+IO_PORT "adc_data[3]" IO_TYPE=LVCMOS33 PULL_MODE=NONE BANK_VCCIO=3.3;
+IO_LOC "adc_data[2]" J2;
+IO_PORT "adc_data[2]" IO_TYPE=LVCMOS33 PULL_MODE=NONE BANK_VCCIO=3.3;
+IO_LOC "adc_data[1]" E3;
+IO_PORT "adc_data[1]" IO_TYPE=LVCMOS33 PULL_MODE=NONE BANK_VCCIO=3.3;
+IO_LOC "adc_data[0]" D1;
+IO_PORT "adc_data[0]" IO_TYPE=LVCMOS33 PULL_MODE=NONE BANK_VCCIO=3.3;
