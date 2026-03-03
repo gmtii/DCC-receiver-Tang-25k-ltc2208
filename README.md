@@ -1,3 +1,5 @@
+Tang Primer 25K - DDC SDR receiver 
+
 Changes in this fork:  
 
 Control RX frequency and LTC2208 parameters with python serial gui.  
