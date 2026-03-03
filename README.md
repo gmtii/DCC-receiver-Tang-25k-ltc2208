@@ -1,10 +1,6 @@
 Changes in this fork:
 
-Change frequency via serial command - just connect to the standart gowin uart and type frequency in the terminal (no checks!).
-Press second button (not reset :)) to show current frequency in the uart terminal.
-Test fpga Gowin on module tang-nano-9k as ddc-frontend for sdr eceiver
-
-Control RX frequency and LTC2208 parameters with python gui.
+Control RX frequency and LTC2208 parameters with python serial gui.
 
 ![alt text](https://github.com/gmtii/DCC-receiver-Tang-25k-ltc2208/blob/iberico/2026-03-03_22-40.png)
 
