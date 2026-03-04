@@ -1,4 +1,4 @@
-Tang Primer 25K - DDC SDR receiver 
+Tang Primer 25K - DDC SDR receiver : https://wiki.sipeed.com/hardware/en/tang/tang-primer-25k/primer-25k.html  
 
 Block schematics:
 
