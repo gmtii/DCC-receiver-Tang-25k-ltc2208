@@ -2,7 +2,7 @@ Tang Primer 25K - DDC SDR receiver
 
 Block schematics:
 
-![alt text](https://github.com/gmtii/DCC-receiver-Tang-25k-ltc2208/blob/iberico/2026-03-04_12-14)  
+![alt text](https://github.com/gmtii/DDC-receiver-Tang-Primer-25k-ltc2208/blob/iberico/2026-03-04_12-14.png)  
 
 Changes in this fork:  
 
