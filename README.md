@@ -18,7 +18,7 @@ cordic => IQ
 polyphaze FIR-decimator X8R8  
 output quadrature samples on MCU over I2S-master interface (48000 Hz sample rate)  
 
-Original project: Hermes SDR
+Original project: Hermes SDR  
 Tang version (i2c control): https://github.com/Cvarc-Xtal/DDC-receiver-Tang-Nano-9K  
 Serial control fork: https://github.com/enthru/DDC-receiver-Tang-Nano-9K  
 
