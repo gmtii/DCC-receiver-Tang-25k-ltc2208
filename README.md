@@ -1,5 +1,9 @@
 Tang Primer 25K - DDC SDR receiver 
 
+Block schematics:
+
+![alt text](https://github.com/gmtii/DCC-receiver-Tang-25k-ltc2208/blob/iberico/2026-03-04_12-14)  
+
 Changes in this fork:  
 
 Control RX frequency and LTC2208 parameters with python serial gui.  
